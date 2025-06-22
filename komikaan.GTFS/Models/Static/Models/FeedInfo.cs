@@ -3,7 +3,7 @@
     /// <summary>
     /// Represents dataset metadata.
     /// </summary>
-    public class FeedInfo
+    public class FeedInfo : GTFSStaticObject
     {
         /// <summary>
         /// Full name of the organization that publishes the dataset.

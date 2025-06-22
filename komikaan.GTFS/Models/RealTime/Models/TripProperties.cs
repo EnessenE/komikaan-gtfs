@@ -1,9 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Models
+﻿using komikaan.GTFS.Models.Static;
+
+namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Defines updated properties of a trip. Experimental.
     /// </summary>
-    public class TripProperties
+    public class TripProperties : GTFSRealtimeObject
     {
         /// <summary>
         /// Defines the identifier of a new trip that is a duplicate of an existing trip. Required if schedule_relationship is DUPLICATED.

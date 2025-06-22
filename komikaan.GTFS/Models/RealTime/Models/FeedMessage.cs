@@ -1,9 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Models
+﻿using komikaan.GTFS.Models.Static;
+
+namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// The contents of a feed message. Each message in the stream is obtained as a response to an appropriate HTTP GET request.
     /// </summary>
-    public class FeedMessage
+    public class FeedMessage : GTFSRealtimeObject
     {
         /// <summary>
         /// Metadata about this feed and feed message.

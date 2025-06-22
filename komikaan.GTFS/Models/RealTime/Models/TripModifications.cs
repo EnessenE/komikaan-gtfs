@@ -1,9 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Models
+﻿using komikaan.GTFS.Models.Static;
+
+namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A TripModifications message identifies a list of similar trips which are all affected by particular modifications, such as a detour. Experimental.
     /// </summary>
-    public class TripModifications
+    public class TripModifications : GTFSRealtimeObject
     {
         /// <summary>
         /// A list of selected trips affected by this TripModifications.

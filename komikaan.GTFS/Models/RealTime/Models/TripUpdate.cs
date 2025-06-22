@@ -1,9 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Models
+﻿using komikaan.GTFS.Models.Static;
+
+namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Realtime update on the progress of a vehicle along a trip.
     /// </summary>
-    public class TripUpdate
+    public class TripUpdate : GTFSRealtimeObject
     {
         /// <summary>
         /// The Trip that this message applies to.

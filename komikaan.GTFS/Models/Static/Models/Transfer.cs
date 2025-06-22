@@ -5,7 +5,7 @@ namespace komikaan.GTFS.Models.Static.Models
     /// <summary>
     /// Represents rules for making connections at transfer points between routes.
     /// </summary>
-    public class Transfer
+    public class Transfer : GTFSStaticObject
     {
         /// <summary>
         /// Identifies a stop or station where a connection begins.

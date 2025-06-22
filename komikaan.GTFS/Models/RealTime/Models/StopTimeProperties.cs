@@ -1,11 +1,12 @@
 ﻿using komikaan.GTFS.Models.RealTime.Enums;
+using komikaan.GTFS.Models.Static;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Realtime update for certain properties defined within GTFS stop_times.txt. Experimental.
     /// </summary>
-    public class StopTimeProperties
+    public class StopTimeProperties : GTFSRealtimeObject
     {
         /// <summary>
         /// Supports real-time stop assignments. Refers to a stop_id defined in the GTFS stops.txt.

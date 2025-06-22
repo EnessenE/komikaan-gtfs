@@ -3,7 +3,7 @@
     /// <summary>
     /// Represents rules to apply fares for itineraries.
     /// </summary>
-    public class FareRule
+    public class FareRule : GTFSStaticObject
     {
         /// <summary>
         /// Identifies a fare class.

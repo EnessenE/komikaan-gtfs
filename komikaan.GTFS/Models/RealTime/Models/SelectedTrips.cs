@@ -1,9 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Models
+﻿using komikaan.GTFS.Models.Static;
+
+namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// List of selected trips with an associated shape. Experimental.
     /// </summary>
-    public class SelectedTrips
+    public class SelectedTrips : GTFSRealtimeObject
     {
         /// <summary>
         /// A list of trip_id from the original (CSV) GTFS that are affected by the containing replacement.

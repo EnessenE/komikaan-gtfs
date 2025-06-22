@@ -1,9 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Models
+﻿using komikaan.GTFS.Models.Static;
+
+namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A geographic position of a vehicle.
     /// </summary>
-    public class Position
+    public class Position : GTFSRealtimeObject
     {
         /// <summary>
         /// Degrees North, in the WGS-84 coordinate system.

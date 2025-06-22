@@ -5,7 +5,7 @@ namespace komikaan.GTFS.Models.Static.Models
     /// <summary>
     /// Represents exceptions for the services defined in the calendar.txt.
     /// </summary>
-    public class CalendarDate
+    public class CalendarDate : GTFSStaticObject
     {
         /// <summary>
         /// Identifies a set of dates when a service exception occurs.

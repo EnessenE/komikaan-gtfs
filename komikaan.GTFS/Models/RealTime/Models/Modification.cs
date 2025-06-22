@@ -1,9 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Models
+﻿using komikaan.GTFS.Models.Static;
+
+namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A Modification message describes changes to each affected trip starting at start_stop_selector. Experimental.
     /// </summary>
-    public class Modification
+    public class Modification : GTFSRealtimeObject
     {
         /// <summary>
         /// The stop selector of the first stop of the original trip that is to be affected by this modification.

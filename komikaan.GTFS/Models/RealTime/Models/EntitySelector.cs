@@ -1,9 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Models
+﻿using komikaan.GTFS.Models.Static;
+
+namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A selector for an entity in a GTFS feed.
     /// </summary>
-    public class EntitySelector
+    public class EntitySelector : GTFSRealtimeObject
     {
         /// <summary>
         /// The agency_id from the GTFS feed that this selector refers to.

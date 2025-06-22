@@ -1,9 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Models
+﻿using komikaan.GTFS.Models.Static;
+
+namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A time interval. The interval is considered active at time t if t is greater than or equal to the start time and less than the end time.
     /// </summary>
-    public class TimeRange
+    public class TimeRange : GTFSRealtimeObject
     {
         /// <summary>
         /// Start time, in POSIX time. If missing, the interval starts at minus infinity.

@@ -5,7 +5,7 @@ namespace komikaan.GTFS.Models.Static.Models
     /// <summary>
     /// Represents trips for each route. A trip is a sequence of two or more stops that occur during a specific time period.
     /// </summary>
-    public class Trip
+    public class Trip : GTFSStaticObject
     {
         /// <summary>
         /// Identifies a route.

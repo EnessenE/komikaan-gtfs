@@ -5,7 +5,7 @@ namespace komikaan.GTFS.Models.Static.Models
     /// <summary>
     /// Represents headway (time between trips) for headway-based service.
     /// </summary>
-    public class Frequency
+    public class Frequency : GTFSStaticObject
     {
         /// <summary>
         /// Identifies a trip to which the specified headway of service applies.

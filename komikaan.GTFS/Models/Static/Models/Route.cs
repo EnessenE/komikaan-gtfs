@@ -5,7 +5,7 @@ namespace komikaan.GTFS.Models.Static.Models
     /// <summary>
     /// Represents transit routes. A route is a group of trips that are displayed to riders as a single service.
     /// </summary>
-    public class Route
+    public class Route : GTFSStaticObject
     {
         /// <summary>
         /// Identifies a route.

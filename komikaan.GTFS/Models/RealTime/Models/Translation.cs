@@ -1,9 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Models
+﻿using komikaan.GTFS.Models.Static;
+
+namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A localized string mapped to a language.
     /// </summary>
-    public class Translation
+    public class Translation : GTFSRealtimeObject
     {
         /// <summary>
         /// A UTF-8 string containing the message.

@@ -1,9 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Models
+﻿using komikaan.GTFS.Models.Static;
+
+namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// When a service is affected by a trip modification, ModifiedTripSelector is used to select some trip.
     /// </summary>
-    public class ModifiedTripSelector
+    public class ModifiedTripSelector : GTFSRealtimeObject
     {
         /// <summary>
         /// The id of the FeedEntity in which the contained TripModifications object affects this trip.

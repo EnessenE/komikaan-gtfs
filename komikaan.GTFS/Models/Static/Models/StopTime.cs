@@ -5,7 +5,7 @@ namespace komikaan.GTFS.Models.Static.Models
     /// <summary>
     /// Represents the times that a vehicle arrives at and departs from stops for each trip.
     /// </summary>
-    public class StopTime
+    public class StopTime : GTFSStaticObject
     {
         /// <summary>
         /// Identifies a trip.
