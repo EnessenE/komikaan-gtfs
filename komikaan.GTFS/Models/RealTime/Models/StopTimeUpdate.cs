@@ -1,11 +1,12 @@
 ﻿using komikaan.GTFS.Models.RealTime.Enums;
+using komikaan.GTFS.Models.Static;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Realtime update for arrival and/or departure events for a given stop on a trip.
     /// </summary>
-    public class StopTimeUpdate
+    public class StopTimeUpdate : GTFSRealtimeObject
     {
         /// <summary>
         /// Must be the same as in stop_times.txt. Required for trips that visit the same stop_id more than once.

@@ -1,11 +1,12 @@
 ﻿using komikaan.GTFS.Models.RealTime.Enums;
+using komikaan.GTFS.Models.Static;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Metadata about a feed, included in feed messages.
     /// </summary>
-    public class FeedHeader
+    public class FeedHeader : GTFSRealtimeObject
     {
         /// <summary>
         /// Version of the feed specification. The current version is 2.0.

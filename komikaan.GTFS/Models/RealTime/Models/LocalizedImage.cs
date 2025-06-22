@@ -1,9 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Models
+﻿using komikaan.GTFS.Models.Static;
+
+namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A localized image URL mapped to a language.
     /// </summary>
-    public class LocalizedImage
+    public class LocalizedImage : GTFSRealtimeObject
     {
         /// <summary>
         /// String containing a URL linking to an image. The image linked must be less than 2MB.

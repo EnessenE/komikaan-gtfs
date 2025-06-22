@@ -5,7 +5,7 @@ namespace komikaan.GTFS.Models.Static.Models
     /// <summary>
     /// Represents stops where vehicles pick up or drop off riders. Also defines stations and station entrances.
     /// </summary>
-    public class Stop
+    public class Stop : GTFSStaticObject
     {
         /// <summary>
         /// Identifies a location: stop/platform, station, entrance/exit, generic node or boarding area.

@@ -1,9 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Models
+﻿using komikaan.GTFS.Models.Static;
+
+namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A definition (or update) of an entity in the transit feed.
     /// </summary>
-    public class FeedEntity
+    public class FeedEntity : GTFSRealtimeObject
     {
         /// <summary>
         /// Feed-unique identifier for this entity.

@@ -1,11 +1,12 @@
 ﻿using komikaan.GTFS.Models.RealTime.Enums;
+using komikaan.GTFS.Models.Static;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// An alert, indicating some sort of incident in the public transit network.
     /// </summary>
-    public class Alert
+    public class Alert : GTFSRealtimeObject
     {
         /// <summary>
         /// Time when the alert should be shown to the user. If multiple ranges are given, the alert will be shown during all of them.

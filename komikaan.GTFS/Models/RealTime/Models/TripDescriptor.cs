@@ -1,11 +1,12 @@
 ﻿using komikaan.GTFS.Models.RealTime.Enums;
+using komikaan.GTFS.Models.Static;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A descriptor that identifies a single instance of a GTFS trip.
     /// </summary>
-    public class TripDescriptor
+    public class TripDescriptor : GTFSRealtimeObject
     {
         /// <summary>
         /// The trip_id from the GTFS feed that this selector refers to.

@@ -5,7 +5,7 @@ namespace komikaan.GTFS.Models.Static.Models
     /// <summary>
     /// Represents fare information for a transit agency's routes.
     /// </summary>
-    public class FareAttribute
+    public class FareAttribute : GTFSStaticObject
     {
         /// <summary>
         /// Identifies a fare class.

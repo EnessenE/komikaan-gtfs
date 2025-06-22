@@ -1,9 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Models
+﻿using komikaan.GTFS.Models.Static;
+
+namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Timing information for a single predicted event (either arrival or departure).
     /// </summary>
-    public class StopTimeEvent
+    public class StopTimeEvent : GTFSRealtimeObject
     {
         /// <summary>
         /// Delay in seconds. Can be positive (late) or negative (early). A delay of 0 means the vehicle is on time.

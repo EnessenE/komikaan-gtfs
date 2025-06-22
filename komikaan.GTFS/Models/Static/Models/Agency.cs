@@ -3,7 +3,7 @@
     /// <summary>
     /// Represents a transit agency with service represented in the dataset.
     /// </summary>
-    public class Agency
+    public class Agency : GTFSStaticObject
     {
         /// <summary>
         /// Identifies a transit brand which is often synonymous with a transit agency.

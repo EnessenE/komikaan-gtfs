@@ -1,11 +1,12 @@
 ﻿using komikaan.GTFS.Models.RealTime.Enums;
+using komikaan.GTFS.Models.Static;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Represents a new Stop added to the feed dynamically. The location type of the new stop is 0 (routable stop). Experimental.
     /// </summary>
-    public class Stop
+    public class Stop : GTFSRealtimeObject
     {
         /// <summary>
         /// Identifier of the stop. Must be different than any stop_id defined in the (CSV) GTFS.

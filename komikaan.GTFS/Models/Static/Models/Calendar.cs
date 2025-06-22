@@ -3,7 +3,7 @@
     /// <summary>
     /// Represents service dates specified using a weekly schedule with start and end dates.
     /// </summary>
-    public class Calendar
+    public class Calendar : GTFSStaticObject
     {
         /// <summary>
         /// Identifies a set of dates when service is available for one or more routes.

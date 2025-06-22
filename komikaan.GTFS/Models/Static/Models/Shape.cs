@@ -3,7 +3,7 @@
     /// <summary>
     /// Represents rules for mapping vehicle travel paths.
     /// </summary>
-    public class Shape
+    public class Shape : GTFSStaticObject
     {
         /// <summary>
         /// Identifies a shape.

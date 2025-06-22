@@ -1,11 +1,12 @@
 ﻿using komikaan.GTFS.Models.RealTime.Enums;
+using komikaan.GTFS.Models.Static;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Identification information for the vehicle performing the trip.
     /// </summary>
-    public class VehicleDescriptor
+    public class VehicleDescriptor : GTFSRealtimeObject
     {
         /// <summary>
         /// Internal system identification of the vehicle. Should be unique per vehicle.

@@ -1,9 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Models
+﻿using komikaan.GTFS.Models.Static;
+
+namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Selector for a stop. Either by stop_id or stop_sequence. Experimental.
     /// </summary>
-    public class StopSelector
+    public class StopSelector : GTFSRealtimeObject
     {
         /// <summary>
         /// Must be the same as in stop_times.txt in the corresponding GTFS feed.
