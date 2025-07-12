@@ -15,7 +15,7 @@ namespace komikaan.GTFS.Models.Static.Models
         /// <summary>
         /// Short text or a number that identifies the location for riders.
         /// </summary>
-        public string StopCode { get; set; }
+        public string? StopCode { get; set; }
 
         /// <summary>
         /// Name of the location. The stop_name should match the agency's rider-facing name for the location.
@@ -26,12 +26,12 @@ namespace komikaan.GTFS.Models.Static.Models
         /// <summary>
         /// Readable version of the stop_name.
         /// </summary>
-        public string TtsStopName { get; set; }
+        public string? TtsStopName { get; set; }
 
         /// <summary>
         /// Description of the location that provides useful, quality information.
         /// </summary>
-        public string StopDesc { get; set; }
+        public string? StopDesc { get; set; }
 
         /// <summary>
         /// Latitude of the location. Required for stops, stations, and entrances/exits.
@@ -46,41 +46,41 @@ namespace komikaan.GTFS.Models.Static.Models
         /// <summary>
         /// Identifies the fare zone for a stop.
         /// </summary>
-        public string ZoneId { get; set; }
+        public string? ZoneId { get; set; }
 
         /// <summary>
         /// URL of a web page about the location.
         /// </summary>
-        public string StopUrl { get; set; }
+        public string? StopUrl { get; set; }
 
         /// <summary>
         /// Location type.
         /// </summary>
-        public LocationType LocationType { get; set; }
+        public LocationType? LocationType { get; set; }
 
         /// <summary>
         /// Defines hierarchy between the different locations defined in stops.txt.
         /// </summary>
-        public string ParentStation { get; set; }
+        public string? ParentStation { get; set; }
 
         /// <summary>
         /// Timezone of the location.
         /// </summary>
-        public string StopTimezone { get; set; }
+        public string? StopTimezone { get; set; }
 
         /// <summary>
         /// Indicates whether wheelchair boardings are possible from the location.
         /// </summary>
-        public WheelchairBoarding WheelchairBoarding { get; set; }
+        public WheelchairBoarding? WheelchairBoarding { get; set; }
 
         /// <summary>
         /// Level of the location.
         /// </summary>
-        public string LevelId { get; set; }
+        public string? LevelId { get; set; }
 
         /// <summary>
         /// Platform identifier for a platform stop.
         /// </summary>
-        public string PlatformCode { get; set; }
+        public string? PlatformCode { get; set; }
     }
 }

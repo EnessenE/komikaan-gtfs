@@ -40,7 +40,7 @@ namespace komikaan.GTFS.Models.Static.Models
         /// <summary>
         /// Order of stops for a particular trip.
         /// </summary>
-        public int StopSequence { get; set; }
+        public double StopSequence { get; set; }
 
         /// <summary>
         /// Text that appears on signage identifying the trip's destination to riders.
