@@ -15,7 +15,7 @@ namespace komikaan.GTFS.Models.Static.Models
         /// <summary>
         /// Date when service exception occurs.
         /// </summary>
-        public string Date { get; set; }
+        public DateOnly Date { get; set; }
 
         /// <summary>
         /// Indicates whether service is available on the specified date.
