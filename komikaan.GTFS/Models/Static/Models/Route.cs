@@ -20,17 +20,17 @@ namespace komikaan.GTFS.Models.Static.Models
         /// <summary>
         /// Short name of a route.
         /// </summary>
-        public string RouteShortName { get; set; }
+        public string? RouteShortName { get; set; }
 
         /// <summary>
         /// Full name of a route.
         /// </summary>
-        public string RouteLongName { get; set; }
+        public string? RouteLongName { get; set; }
 
         /// <summary>
         /// Description of a route that provides useful, quality information.
         /// </summary>
-        public string RouteDesc { get; set; }
+        public string? RouteDesc { get; set; }
 
         /// <summary>
         /// Indicates the type of transportation used on a route.
@@ -40,36 +40,36 @@ namespace komikaan.GTFS.Models.Static.Models
         /// <summary>
         /// URL of a web page about the particular route.
         /// </summary>
-        public string RouteUrl { get; set; }
+        public string? RouteUrl { get; set; }
 
         /// <summary>
         /// Route color designation that matches public facing material.
         /// </summary>
-        public string RouteColor { get; set; }
+        public string? RouteColor { get; set; }
 
         /// <summary>
         /// Legible color to use for text drawn against a background of route_color.
         /// </summary>
-        public string RouteTextColor { get; set; }
+        public string? RouteTextColor { get; set; }
 
         /// <summary>
         /// Orders the routes in a way which is ideal for presentation to customers.
         /// </summary>
-        public int RouteSortOrder { get; set; }
+        public int? RouteSortOrder { get; set; }
 
         /// <summary>
         /// Indicates that the rider can board the transit vehicle at any point along the vehicle's travel path.
         /// </summary>
-        public ContinuousPickup ContinuousPickup { get; set; }
+        public ContinuousPickup? ContinuousPickup { get; set; }
 
         /// <summary>
         /// Indicates that the rider can alight from the transit vehicle at any point along the vehicle's travel path.
         /// </summary>
-        public ContinuousDropOff ContinuousDropOff { get; set; }
+        public ContinuousDropOff? ContinuousDropOff { get; set; }
 
         /// <summary>
         /// Identifies a group of routes.
         /// </summary>
-        public string NetworkId { get; set; }
+        public string? NetworkId { get; set; }
     }
 }

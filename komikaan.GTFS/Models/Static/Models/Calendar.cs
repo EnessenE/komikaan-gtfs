@@ -13,46 +13,46 @@
         /// <summary>
         /// Indicates whether the service operates on all Mondays in the date range.
         /// </summary>
-        public int Monday { get; set; }
+        public bool Monday { get; set; }
 
         /// <summary>
         /// Indicates whether the service operates on all Tuesdays in the date range.
         /// </summary>
-        public int Tuesday { get; set; }
+        public bool Tuesday { get; set; }
 
         /// <summary>
         /// Indicates whether the service operates on all Wednesdays in the date range.
         /// </summary>
-        public int Wednesday { get; set; }
+        public bool Wednesday { get; set; }
 
         /// <summary>
         /// Indicates whether the service operates on all Thursdays in the date range.
         /// </summary>
-        public int Thursday { get; set; }
+        public bool Thursday { get; set; }
 
         /// <summary>
         /// Indicates whether the service operates on all Fridays in the date range.
         /// </summary>
-        public int Friday { get; set; }
+        public bool Friday { get; set; }
 
         /// <summary>
         /// Indicates whether the service operates on all Saturdays in the date range.
         /// </summary>
-        public int Saturday { get; set; }
+        public bool Saturday { get; set; }
 
         /// <summary>
         /// Indicates whether the service operates on all Sundays in the date range.
         /// </summary>
-        public int Sunday { get; set; }
+        public bool Sunday { get; set; }
 
         /// <summary>
-        /// Start service day for the service interval.
+        /// Start service day for the service boolerval.
         /// </summary>
-        public string StartDate { get; set; }
+        public DateOnly StartDate { get; set; }
 
         /// <summary>
-        /// End service day for the service interval.
+        /// End service day for the service boolerval.
         /// </summary>
-        public string EndDate { get; set; }
+        public DateOnly EndDate { get; set; }
     }
 }

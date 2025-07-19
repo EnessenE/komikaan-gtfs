@@ -5,8 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 4.0.4
+### Changed
+- Make items in Calendar, Route, Shape and Trip nullable where needed
+- Make StartDate and EndDate in Calendar a DateOnly
+- Make all "days" in Calendar a boolean
+
 ## 4.0.3
-### Added
+### Changed
 - Make items in CalendarDate, Stop and StopTime nullable where needed
 - Make Date in CalendarDate a DateOnly
 

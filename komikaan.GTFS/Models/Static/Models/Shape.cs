@@ -28,6 +28,6 @@
         /// <summary>
         /// Actual distance traveled along the shape from the first shape point to this point.
         /// </summary>
-        public double ShapeDistTraveled { get; set; }
+        public double? ShapeDistTraveled { get; set; }
     }
 }

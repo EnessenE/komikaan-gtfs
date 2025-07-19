@@ -25,36 +25,36 @@ namespace komikaan.GTFS.Models.Static.Models
         /// <summary>
         /// Text that appears on signage identifying the trip's destination to riders.
         /// </summary>
-        public string TripHeadsign { get; set; }
+        public string? TripHeadsign { get; set; }
 
         /// <summary>
         /// Public facing text used to identify the trip to riders.
         /// </summary>
-        public string TripShortName { get; set; }
+        public string? TripShortName { get; set; }
 
         /// <summary>
         /// Indicates the direction of travel for a trip.
         /// </summary>
-        public Direction DirectionId { get; set; }
+        public Direction? DirectionId { get; set; }
 
         /// <summary>
         /// Identifies the block to which the trip belongs.
         /// </summary>
-        public string BlockId { get; set; }
+        public string? BlockId { get; set; }
 
         /// <summary>
         /// Identifies a geospatial shape describing the vehicle travel path for a trip.
         /// </summary>
-        public string ShapeId { get; set; }
+        public string? ShapeId { get; set; }
 
         /// <summary>
         /// Indicates wheelchair accessibility.
         /// </summary>
-        public WheelchairAccessible WheelchairAccessible { get; set; }
+        public WheelchairAccessible? WheelchairAccessible { get; set; }
 
         /// <summary>
         /// Indicates whether bikes are allowed.
         /// </summary>
-        public BikesAllowed BikesAllowed { get; set; }
+        public BikesAllowed? BikesAllowed { get; set; }
     }
 }
