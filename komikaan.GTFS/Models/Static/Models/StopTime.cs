@@ -75,6 +75,6 @@ namespace komikaan.GTFS.Models.Static.Models
         /// <summary>
         /// Indicates if arrival and departure times are strictly adhered to.
         /// </summary>
-        public Timepoint Timepoint { get; set; }
+        public Timepoint? Timepoint { get; set; }
     }
 }

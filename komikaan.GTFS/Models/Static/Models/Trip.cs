@@ -56,5 +56,12 @@ namespace komikaan.GTFS.Models.Static.Models
         /// Indicates whether bikes are allowed.
         /// </summary>
         public BikesAllowed? BikesAllowed { get; set; }
+
+        /// <summary>
+        /// Indicates whether cars are allowed.
+        /// </summary>
+        public CarsAllowed? CarsAllowed { get; set; }
+
+
     }
 }
