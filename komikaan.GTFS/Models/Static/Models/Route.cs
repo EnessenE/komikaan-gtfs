@@ -1,4 +1,5 @@
-﻿using komikaan.GTFS.Models.Static.Enums;
+﻿using komikaan.GTFS.Extensions;
+using komikaan.GTFS.Models.Static.Enums;
 
 namespace komikaan.GTFS.Models.Static.Models
 {
@@ -7,6 +8,9 @@ namespace komikaan.GTFS.Models.Static.Models
     /// </summary>
     public class Route : GTFSStaticObject
     {
+        private RouteType _routeType;
+        private ExtendedRouteType _extendedRouteType;
+
         /// <summary>
         /// Identifies a route.
         /// </summary>
@@ -34,8 +38,30 @@ namespace komikaan.GTFS.Models.Static.Models
 
         /// <summary>
         /// Indicates the type of transportation used on a route.
+        /// If only a ExtendedRouteType was provided, this will return a opinionated ExtendedRouteType that was converted to RouteType
         /// </summary>
-        public RouteType RouteType { get; set; }
+        public RouteType RouteType
+        {
+            get => _routeType; 
+            set {
+                _routeType = value;
+                _extendedRouteType = value.ToExtendedRouteType();
+            }
+        }
+
+        /// <summary>
+        /// Indicates the type of transportation used on a route.
+        /// If only a RouteType was provided, this will return a opinionated RouteType that was converted to ExtendedRouteType
+        /// </summary>
+        public ExtendedRouteType ExtendedRouteType
+        { 
+            get => _extendedRouteType;
+            set
+            {
+                _routeType = value.ToRouteType();
+                _extendedRouteType = value;
+            }
+        }
 
         /// <summary>
         /// URL of a web page about the particular route.
