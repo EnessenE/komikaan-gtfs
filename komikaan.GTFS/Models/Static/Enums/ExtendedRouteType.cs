@@ -108,5 +108,5 @@ public enum ExtendedRouteType
 
     // Miscellaneous
     MiscellaneousService = 1700,
-    HorseDrawnCarriage = 170
+    HorseDrawnCarriage = 1702
 }
