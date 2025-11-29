@@ -8,7 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 4.3.0
 - HorseDrawnCarrage extended route type was set to 170, this should have been 1702
 - Update to October 2025 GTFS Static spec https://gtfs.org/documentation/schedule/change-history/revision-history/#october-2025
- - Added cemv_support field to Agency
+ - Added cemv_support field to Agency and Trip
+ - Added stop_access field to Stop
 
 ## 4.2.0
 - GTFS Extended Route Types support
