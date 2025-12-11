@@ -1,4 +1,6 @@
-﻿namespace komikaan.GTFS.Models.Static.Models
+﻿using komikaan.GTFS.Models.Static.Enums;
+
+namespace komikaan.GTFS.Models.Static.Models
 {
     /// <summary>
     /// Represents a transit agency with service represented in the dataset.
@@ -46,5 +48,13 @@
         /// Email address actively monitored by the agency's customer service department.
         /// </summary>
         public string AgencyEmail { get; set; }
+
+        /// <summary>
+        /// Indicates if riders can access a transit service (i.e., trip) associated with this agency by using a contactless EMV (Europay, Mastercard, and Visa) card 
+        /// or mobile device as fare media at a fare validator (such as in pay-as-you-go or open-loop systems). 
+        /// This field does not indicate that cEMV can be used to purchase other fare products or to add value to another fare media.
+        /// </summary>
+        /// <remarks>If both agency.cemv_support and routes.cemv_support are provided for the same service, the value in routes.cemv_support shall take precedence.</remarks>
+        public CemvSupport? CemvSupport { get; set; }
     }
 }

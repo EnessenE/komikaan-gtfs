@@ -97,5 +97,13 @@ namespace komikaan.GTFS.Models.Static.Models
         /// Identifies a group of routes.
         /// </summary>
         public string? NetworkId { get; set; }
+
+        /// <summary>
+        /// Indicates if riders can access a transit service (i.e., trip) associated with this route by using a contactless EMV (Europay, Mastercard, and Visa) card 
+        /// or mobile device as fare media at a fare validator (such as in pay-as-you-go or open-loop systems). 
+        /// This field does not indicate that cEMV can be used to purchase other fare products or to add value to another fare media.
+        /// </summary>
+        /// <remarks>Support for cEMVs should only be indicated if all services under this route are accessible with the use of cEMV cards or mobile devices as fare media.</remarks>
+        public CemvSupport? CemvSupport { get; set; }
     }
 }

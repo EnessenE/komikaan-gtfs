@@ -82,5 +82,10 @@ namespace komikaan.GTFS.Models.Static.Models
         /// Platform identifier for a platform stop.
         /// </summary>
         public string? PlatformCode { get; set; }
+
+        /// <summary>
+        /// Indicates how the stop is accessed for a particular station.
+        /// </summary>
+        public StopAccess? StopAccess { get; set; }
     }
 }
