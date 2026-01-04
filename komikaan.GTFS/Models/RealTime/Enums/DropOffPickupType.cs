@@ -1,8 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Enums
+﻿using ProtoBuf;
+
+namespace komikaan.GTFS.Models.RealTime.Enums
 {
     /// <summary>
     /// Defines pickup or dropoff types.
     /// </summary>
+    [ProtoContract(Name = "DropOffPickupType")]
     public enum DropOffPickupType
     {
         /// <summary>

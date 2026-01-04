@@ -1,8 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Enums
+﻿using ProtoBuf;
+
+namespace komikaan.GTFS.Models.RealTime.Enums
 {
     /// <summary>
     /// Determines whether the current fetch is incremental.
     /// </summary>
+    [ProtoContract(Name = "Incrementality")]
     public enum Incrementality
     {
         /// <summary>

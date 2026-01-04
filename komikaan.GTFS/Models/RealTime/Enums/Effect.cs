@@ -1,8 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Enums
+﻿using ProtoBuf;
+
+namespace komikaan.GTFS.Models.RealTime.Enums
 {
     /// <summary>
     /// The effect of a problem on the affected entity.
     /// </summary>
+    [ProtoContract(Name = "Effect")]
     public enum Effect
     {
         NoService = 1,
