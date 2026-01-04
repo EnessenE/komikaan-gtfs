@@ -1,8 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Enums
+﻿using ProtoBuf;
+
+namespace komikaan.GTFS.Models.RealTime.Enums
 {
     /// <summary>
     /// The exact status of the vehicle with respect to the current stop.
     /// </summary>
+    [ProtoContract(Name = "VehicleStopStatus")]
     public enum VehicleStopStatus
     {
         /// <summary>

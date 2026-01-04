@@ -5,6 +5,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 4.4.0
+- Include Protobuf core for attributes
+
 ## 4.3.0
 - HorseDrawnCarrage extended route type was set to 170, this should have been 1702
 - Update to October 2025 GTFS Static spec https://gtfs.org/documentation/schedule/change-history/revision-history/#october-2025

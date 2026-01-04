@@ -1,8 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Enums
+﻿using ProtoBuf;
+
+namespace komikaan.GTFS.Models.RealTime.Enums
 {
     /// <summary>
     /// The relation between a stop time and the static schedule.
     /// </summary>
+    [ProtoContract(Name = "StopTimeScheduleRelationship")]
     public enum StopTimeScheduleRelationship
     {
         /// <summary>

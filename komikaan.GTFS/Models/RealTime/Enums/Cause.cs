@@ -1,8 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Enums
+﻿using ProtoBuf;
+
+namespace komikaan.GTFS.Models.RealTime.Enums
 {
     /// <summary>
     /// Cause of an alert.
     /// </summary>
+    [ProtoContract(Name = "Cause")]
     public enum Cause
     {
         UnknownCause = 1,
