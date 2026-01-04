@@ -1,8 +1,11 @@
-﻿namespace komikaan.GTFS.Models.RealTime.Enums
+﻿using ProtoBuf;
+
+namespace komikaan.GTFS.Models.RealTime.Enums
 {
     /// <summary>
     /// Accessibility of a trip for wheelchairs.
     /// </summary>
+    [ProtoContract(Name = "WheelchairAccessible")]
     public enum WheelchairAccessible
     {
         /// <summary>
