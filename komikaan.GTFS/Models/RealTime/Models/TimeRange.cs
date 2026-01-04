@@ -1,10 +1,12 @@
 ﻿using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A time interval. The interval is considered active at time t if t is greater than or equal to the start time and less than the end time.
     /// </summary>
+    [ProtoContract]
     public class TimeRange : GTFSRealtimeObject
     {
         /// <summary>

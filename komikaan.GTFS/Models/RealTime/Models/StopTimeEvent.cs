@@ -1,10 +1,12 @@
 ﻿using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Timing information for a single predicted event (either arrival or departure).
     /// </summary>
+    [ProtoContract]
     public class StopTimeEvent : GTFSRealtimeObject
     {
         /// <summary>

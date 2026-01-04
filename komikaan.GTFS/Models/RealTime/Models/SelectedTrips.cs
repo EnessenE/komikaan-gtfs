@@ -1,10 +1,12 @@
 ﻿using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// List of selected trips with an associated shape. Experimental.
     /// </summary>
+    [ProtoContract]
     public class SelectedTrips : GTFSRealtimeObject
     {
         /// <summary>

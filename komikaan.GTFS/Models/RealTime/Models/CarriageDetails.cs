@@ -1,11 +1,13 @@
 ﻿using komikaan.GTFS.Models.RealTime.Enums;
 using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Carriage specific details, used for vehicles composed of several carriages. Experimental.
     /// </summary>
+    [ProtoContract]
     public class CarriageDetails : GTFSRealtimeObject
     {
         /// <summary>

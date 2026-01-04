@@ -1,10 +1,12 @@
 ﻿using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Realtime update on the progress of a vehicle along a trip.
     /// </summary>
+    [ProtoContract]
     public class TripUpdate : GTFSRealtimeObject
     {
         /// <summary>

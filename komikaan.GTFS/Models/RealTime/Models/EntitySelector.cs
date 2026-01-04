@@ -1,10 +1,12 @@
 ﻿using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A selector for an entity in a GTFS feed.
     /// </summary>
+    [ProtoContract]
     public class EntitySelector : GTFSRealtimeObject
     {
         /// <summary>

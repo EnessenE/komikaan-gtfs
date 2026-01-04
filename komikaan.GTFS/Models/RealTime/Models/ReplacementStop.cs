@@ -1,10 +1,12 @@
 ﻿using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Each ReplacementStop message defines a stop that will now be visited by the trip, and optionally specifies the estimated travel time to the stop. Experimental.
     /// </summary>
+    [ProtoContract]
     public class ReplacementStop : GTFSRealtimeObject
     {
         /// <summary>

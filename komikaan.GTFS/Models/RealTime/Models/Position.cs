@@ -1,10 +1,12 @@
 ﻿using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A geographic position of a vehicle.
     /// </summary>
+    [ProtoContract]
     public class Position : GTFSRealtimeObject
     {
         /// <summary>

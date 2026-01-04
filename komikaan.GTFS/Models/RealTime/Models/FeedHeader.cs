@@ -1,11 +1,13 @@
 ﻿using komikaan.GTFS.Models.RealTime.Enums;
 using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Metadata about a feed, included in feed messages.
     /// </summary>
+    [ProtoContract]
     public class FeedHeader : GTFSRealtimeObject
     {
         /// <summary>

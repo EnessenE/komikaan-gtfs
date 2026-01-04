@@ -1,10 +1,12 @@
 ﻿using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// When a service is affected by a trip modification, ModifiedTripSelector is used to select some trip.
     /// </summary>
+    [ProtoContract]
     public class ModifiedTripSelector : GTFSRealtimeObject
     {
         /// <summary>

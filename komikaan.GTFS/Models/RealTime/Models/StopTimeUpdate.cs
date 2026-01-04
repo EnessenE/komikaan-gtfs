@@ -1,11 +1,13 @@
 ﻿using komikaan.GTFS.Models.RealTime.Enums;
 using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Realtime update for arrival and/or departure events for a given stop on a trip.
     /// </summary>
+    [ProtoContract]
     public class StopTimeUpdate : GTFSRealtimeObject
     {
         /// <summary>

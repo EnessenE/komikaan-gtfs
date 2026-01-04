@@ -1,10 +1,12 @@
 ﻿using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Selector for a stop. Either by stop_id or stop_sequence. Experimental.
     /// </summary>
+    [ProtoContract]
     public class StopSelector : GTFSRealtimeObject
     {
         /// <summary>

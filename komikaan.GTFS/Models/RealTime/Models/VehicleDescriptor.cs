@@ -1,11 +1,13 @@
 ﻿using komikaan.GTFS.Models.RealTime.Enums;
 using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Identification information for the vehicle performing the trip.
     /// </summary>
+    [ProtoContract]
     public class VehicleDescriptor : GTFSRealtimeObject
     {
         /// <summary>

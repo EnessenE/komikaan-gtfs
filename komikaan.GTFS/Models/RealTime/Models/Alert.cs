@@ -1,11 +1,13 @@
 ﻿using komikaan.GTFS.Models.RealTime.Enums;
 using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// An alert, indicating some sort of incident in the public transit network.
     /// </summary>
+    [ProtoContract]
     public class Alert : GTFSRealtimeObject
     {
         /// <summary>

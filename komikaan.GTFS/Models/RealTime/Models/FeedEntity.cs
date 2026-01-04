@@ -1,10 +1,12 @@
 ﻿using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A definition (or update) of an entity in the transit feed.
     /// </summary>
+    [ProtoContract]
     public class FeedEntity : GTFSRealtimeObject
     {
         /// <summary>

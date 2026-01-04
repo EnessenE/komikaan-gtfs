@@ -1,10 +1,12 @@
 ﻿using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A localized image URL mapped to a language.
     /// </summary>
+    [ProtoContract]
     public class LocalizedImage : GTFSRealtimeObject
     {
         /// <summary>

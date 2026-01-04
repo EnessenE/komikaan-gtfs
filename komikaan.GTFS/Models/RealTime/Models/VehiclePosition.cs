@@ -1,11 +1,13 @@
 ﻿using komikaan.GTFS.Models.RealTime.Enums;
 using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Realtime positioning information for a given vehicle.
     /// </summary>
+    [ProtoContract]
     public class VehiclePosition : GTFSRealtimeObject
     {
         /// <summary>

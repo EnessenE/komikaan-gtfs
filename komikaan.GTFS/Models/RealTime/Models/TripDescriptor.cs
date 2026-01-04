@@ -1,11 +1,13 @@
 ﻿using komikaan.GTFS.Models.RealTime.Enums;
 using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A descriptor that identifies a single instance of a GTFS trip.
     /// </summary>
+    [ProtoContract]
     public class TripDescriptor : GTFSRealtimeObject
     {
         /// <summary>

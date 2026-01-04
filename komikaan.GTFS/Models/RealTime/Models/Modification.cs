@@ -1,10 +1,12 @@
 ﻿using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A Modification message describes changes to each affected trip starting at start_stop_selector. Experimental.
     /// </summary>
+    [ProtoContract]
     public class Modification : GTFSRealtimeObject
     {
         /// <summary>

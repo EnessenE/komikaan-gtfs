@@ -1,10 +1,12 @@
 ﻿using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// Defines updated properties of a trip. Experimental.
     /// </summary>
+    [ProtoContract]
     public class TripProperties : GTFSRealtimeObject
     {
         /// <summary>

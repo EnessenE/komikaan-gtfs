@@ -1,10 +1,12 @@
 ﻿using komikaan.GTFS.Models.Static;
+using ProtoBuf;
 
 namespace komikaan.GTFS.Models.RealTime.Models
 {
     /// <summary>
     /// A TripModifications message identifies a list of similar trips which are all affected by particular modifications, such as a detour. Experimental.
     /// </summary>
+    [ProtoContract]
     public class TripModifications : GTFSRealtimeObject
     {
         /// <summary>
