@@ -1,7 +1,7 @@
 # komikaan-gtfs
 Simply put, this is a library with the GTFS datacontracts in .NET without any extra fancyness. While part of an overal bigger project, these are kept up to date for general usage.
 
-The current library by gtfs.org are a bit dissapointing, not up-to-date or are just missing data all over.
+The [current library](https://www.nuget.org/packages/GtfsRealtimeBindings/) by gtfs.org are a bit dissapointing, not up-to-date or are just missing data all over. They "recently" update their GTFS bindings but [never published it to nuget.](https://github.com/MobilityData/gtfs-realtime-bindings/pull/131)
 
 The library can be found on [Nuget](https://www.nuget.org/packages/komikaan.GTFS).
 
