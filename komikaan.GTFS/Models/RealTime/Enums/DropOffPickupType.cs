@@ -11,18 +11,18 @@ namespace komikaan.GTFS.Models.RealTime.Enums
         /// <summary>
         /// Regularly scheduled pickup/dropoff.
         /// </summary>
-        Regular,
+        Regular = 0,
         /// <summary>
         /// No pickup/dropoff available.
         /// </summary>
-        None,
+        None = 1,
         /// <summary>
         /// Must phone agency to arrange pickup/dropoff.
         /// </summary>
-        PhoneAgency,
+        PhoneAgency = 2,
         /// <summary>
         /// Must coordinate with driver to arrange pickup/dropoff.
         /// </summary>
-        CoordinateWithDriver
+        CoordinateWithDriver = 3
     }
 }

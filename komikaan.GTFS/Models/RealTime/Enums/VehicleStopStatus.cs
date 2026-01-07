@@ -11,14 +11,14 @@ namespace komikaan.GTFS.Models.RealTime.Enums
         /// <summary>
         /// The vehicle is just about to arrive at the stop.
         /// </summary>
-        IncomingAt,
+        IncomingAt = 0,
         /// <summary>
         /// The vehicle is standing at the stop.
         /// </summary>
-        StoppedAt,
+        StoppedAt = 1,
         /// <summary>
         /// The vehicle has departed the previous stop and is in transit.
         /// </summary>
-        InTransitTo
+        InTransitTo = 2
     }
 }

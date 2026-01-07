@@ -8,10 +8,13 @@ namespace komikaan.GTFS.Models.RealTime.Enums
     [ProtoContract(Name = "CongestionLevel")]
     public enum CongestionLevel
     {
-        UnknownCongestionLevel,
-        RunningSmoothly,
-        StopAndGo,
-        Congestion,
-        SevereCongestion
+        UnknownCongestionLevel = 0,
+        RunningSmoothly = 1,
+        StopAndGo = 2,
+        Congestion = 3,
+        /// <summary>
+        /// Its so servere, "people are leaving their cars"
+        /// </summary>
+        SevereCongestion = 4 
     }
 }

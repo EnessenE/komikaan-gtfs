@@ -11,11 +11,11 @@ namespace komikaan.GTFS.Models.RealTime.Enums
         /// <summary>
         /// This feed update will overwrite all preceding realtime information for the feed. Thus this update is expected to provide a full snapshot of all known realtime information.
         /// </summary>
-        FullDataset,
+        FullDataset = 0,
 
         /// <summary>
         /// Currently, this mode is unsupported and behavior is unspecified for feeds that use this mode.
         /// </summary>
-        Differential
+        Differential = 1
     }
 }
