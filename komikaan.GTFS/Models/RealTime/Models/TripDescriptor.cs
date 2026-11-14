@@ -1,4 +1,5 @@
-﻿using komikaan.GTFS.Models.RealTime.Enums;
+﻿using System.Text;
+using komikaan.GTFS.Models.RealTime.Enums;
 using komikaan.GTFS.Models.Static;
 using ProtoBuf;
 
@@ -48,8 +49,22 @@ namespace komikaan.GTFS.Models.RealTime.Models
 
         /// <summary>
         /// Linkage to any modifications done to this trip (shape changes, removal or addition of stops).
+        /// Raw wire content of field 7. Spec-compliant producers send a serialized <see cref="ModifiedTripSelector"/>
+        /// message here, but some producers (e.g. opentransportdata.swiss) send the affected trip_id as a plain
+        /// string, which protobuf-net cannot parse as a message. Both forms are length-delimited on the wire,
+        /// so the raw bytes are captured without interpretation; use <see cref="ModifiedTripId"/> for the
+        /// plain-string form, or deserialize <see cref="ModifiedTripRaw"/> as <see cref="ModifiedTripSelector"/>
+        /// for the message form.
         /// </summary>
         [ProtoMember(7)]
-        public ModifiedTripSelector? ModifiedTrip { get; set; }
+        public byte[]? ModifiedTripRaw { get; set; }
+
+        /// <summary>
+        /// Field 7 as a string, for producers that send the affected trip_id directly
+        /// (e.g. opentransportdata.swiss). Null when the field is absent.
+        /// </summary>
+        [ProtoIgnore]
+        public string? ModifiedTripId =>
+            ModifiedTripRaw is { Length: > 0 } ? Encoding.UTF8.GetString(ModifiedTripRaw) : null;
     }
 }
