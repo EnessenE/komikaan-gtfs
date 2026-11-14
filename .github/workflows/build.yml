@@ -1,0 +1,50 @@
+name: Build and verify library
+
+on:
+  push:
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+env:
+  DOTNET_VERSION: '8.0.x' # The .NET SDK version to use
+
+jobs:
+  build-and-verify:
+
+    name: build-and-verify-${{matrix.os}}
+    runs-on: ${{ matrix.os }}
+    permissions:
+      contents: read
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Install dependencies
+      run: dotnet restore
+
+    - name: Build Debug
+      run: dotnet build --configuration Debug --no-restore
+
+    - name: Build Release
+      run: dotnet build --configuration Release --no-restore
+
+    - name: Verify build artifacts
+      shell: bash
+      run: |
+        set -euo pipefail
+        dll=$(ls komikaan.GTFS/bin/Release/net8.0/komikaan.GTFS.dll)
+        nupkg=$(ls komikaan.GTFS/bin/Release/*.nupkg)
+        echo "Assembly: $dll"
+        echo "NuGet package: $nupkg"
+
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
