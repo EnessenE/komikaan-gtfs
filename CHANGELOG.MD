@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 4.4.2
 - Fix parsing feeds where `TripDescriptor` field 7 (`modified_trip`) is a plain string instead of a `ModifiedTripSelector` message (e.g. opentransportdata.swiss), which made protobuf-net throw `Invalid wire-type`. Field 7 is now captured as raw bytes in `ModifiedTripRaw`, with computed `ModifiedTrip` (message form) and `ModifiedTripId` (string form) views.
+- Add CI pipeline (`.github/workflows/build.yml`) verifying Debug/Release builds and package artifacts on ubuntu/windows, plus regression tests (`komikaan.GTFS.Tests`) covering feeds with string-form and message-form `modified_trip`.
 
 ## 4.4.1
 - Fix CongestionLevel, DropOffPickupType, Incrementality, SeverityLevel, StopTimeScheduleRelationShip, TripScheduleRelationShip and VehicleStopStatus enums to match GTFS spec set values
