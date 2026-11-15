@@ -47,6 +47,7 @@ jobs:
         dlls=$(ls komikaan.GTFS/bin/Release/*/komikaan.GTFS.dll)
         nupkg=$(ls komikaan.GTFS/bin/Release/*.nupkg)
         echo "Assemblies:"; echo "$dlls"
+        echo "NuGet package: $nupkg"
         echo "Assembly: $dll"
         echo "NuGet package: $nupkg"
 
