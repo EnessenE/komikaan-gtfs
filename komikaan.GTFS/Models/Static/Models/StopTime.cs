@@ -1,5 +1,4 @@
 ﻿using komikaan.GTFS.Models.Static.Enums;
-using System.Diagnostics.Metrics;
 
 namespace komikaan.GTFS.Models.Static.Models
 {
