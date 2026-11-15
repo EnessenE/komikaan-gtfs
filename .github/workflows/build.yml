@@ -7,7 +7,10 @@ on:
   workflow_dispatch:
 
 env:
-  DOTNET_VERSION: '8.0.x' # The .NET SDK version to use
+  # The .NET SDK versions to use
+  DOTNET_VERSION: |
+    8.0.x
+    10.0.x
 
 jobs:
   build-and-verify:
@@ -41,10 +44,20 @@ jobs:
       shell: bash
       run: |
         set -euo pipefail
-        dll=$(ls komikaan.GTFS/bin/Release/net8.0/komikaan.GTFS.dll)
+        dlls=$(ls komikaan.GTFS/bin/Release/*/komikaan.GTFS.dll)
         nupkg=$(ls komikaan.GTFS/bin/Release/*.nupkg)
-        echo "Assembly: $dll"
+        echo "Assemblies:"; echo "$dlls"
         echo "NuGet package: $nupkg"
+
+    - name: Pack NuGet package
+      run: dotnet pack komikaan.GTFS/komikaan.GTFS.csproj --configuration Release --no-build
+
+    - name: Upload NuGet package artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: komikaan.GTFS-${{ github.sha }}
+        path: komikaan.GTFS/bin/Release/*.nupkg
+        retention-days: 30
 
     - name: Test
       run: dotnet test --no-restore --verbosity normal
