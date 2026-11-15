@@ -48,8 +48,6 @@ jobs:
         nupkg=$(ls komikaan.GTFS/bin/Release/*.nupkg)
         echo "Assemblies:"; echo "$dlls"
         echo "NuGet package: $nupkg"
-        echo "Assembly: $dll"
-        echo "NuGet package: $nupkg"
 
     - name: Pack NuGet package
       run: dotnet pack komikaan.GTFS/komikaan.GTFS.csproj --configuration Release --no-build
