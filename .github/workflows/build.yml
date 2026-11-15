@@ -7,9 +7,10 @@ on:
   workflow_dispatch:
 
 env:
+  # The .NET SDK versions to use
   DOTNET_VERSION: |
     8.0.x
-    10.0.x # The .NET SDK versions to use
+    10.0.x
 
 jobs:
   build-and-verify:
