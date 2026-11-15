@@ -1,5 +1,3 @@
-using komikaan.GTFS.Models.Static.Enums;
-
 namespace komikaan.GTFS.Models.Static.Models
 {
     /// <summary>
@@ -33,19 +31,19 @@ namespace komikaan.GTFS.Models.Static.Models
         public string OrganizationName { get; set; }
 
         /// <summary>
-        /// Whether the organization is the producer of the dataset.
+        /// Whether the organization is the producer of the dataset (attributions.txt is_producer, 0/1).
         /// </summary>
-        public AttributionRole? IsProducer { get; set; }
+        public bool? IsProducer { get; set; }
 
         /// <summary>
-        /// Whether the organization is the operator of the service.
+        /// Whether the organization is the operator of the service (attributions.txt is_operator, 0/1).
         /// </summary>
-        public AttributionRole? IsOperator { get; set; }
+        public bool? IsOperator { get; set; }
 
         /// <summary>
-        /// Whether the organization is the authority over the service.
+        /// Whether the organization is the authority over the service (attributions.txt is_authority, 0/1).
         /// </summary>
-        public AttributionRole? IsAuthority { get; set; }
+        public bool? IsAuthority { get; set; }
 
         /// <summary>
         /// URL of the organization.

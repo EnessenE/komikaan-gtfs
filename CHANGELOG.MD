@@ -10,9 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `safe_duration_factor` and `safe_duration_offset` to `Trip` (April 2026 spec revision)
 - Add `from_route_id`, `to_route_id`, `from_trip_id`, `to_trip_id` to `Transfer`, and `InSeat` (4) / `InSeatNotAllowed` (5) to `TransferType`
 - Add GTFS-Flex fields to `StopTime`: `location_group_id`, `location_id`, `start_pickup_drop_off_window`, `end_pickup_drop_off_window`, `pickup_booking_rule_id`, `drop_off_booking_rule_id`
-- New enums: `PathwayMode`, `Bidirectional`, `BookingType`, `FareMediaType`, `FareTransferType`, `DurationLimitType`, `AttributionRole`, `DefaultFareCategory`
+- New enums: `PathwayMode`, `Bidirectional`, `BookingType`, `FareMediaType`, `FareTransferType`, `DurationLimitType`, `DefaultFareCategory`; the 0/1 `attributions.txt` role fields are plain `bool?` on `Attribution`
 - CI pipeline now packs and uploads the `.nupkg` as a workflow artifact
 - Multi-target `net8.0`, `net10.0` and `netstandard2.1` (netstandard2.1 gets `System.Text.Json` as a package dependency and small polyfills for `DateOnly` and the `required` modifier attributes, so the public API is identical on all targets)
+- Package references use minimum-version ranges (`[x.y.z,)`) instead of pinned versions so consumers can resolve higher versions transitively
+- CS8618 suppressed project-wide: the models are DTOs populated by parsers/serializers, not object initializers
 - CI installs both the .NET 8 and .NET 10 SDKs
 
 ## 4.4.2
