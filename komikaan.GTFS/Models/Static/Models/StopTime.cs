@@ -38,6 +38,16 @@ namespace komikaan.GTFS.Models.Static.Models
         public string? StopId { get; set; }
 
         /// <summary>
+        /// Identifies a location group serviced by on-demand trips.
+        /// </summary>
+        public string? LocationGroupId { get; set; }
+
+        /// <summary>
+        /// Identifies a flexible area (from locations.geojson) serviced by on-demand trips.
+        /// </summary>
+        public string? LocationId { get; set; }
+
+        /// <summary>
         /// Order of stops for a particular trip.
         /// </summary>
         public double StopSequence { get; set; }
@@ -76,5 +86,25 @@ namespace komikaan.GTFS.Models.Static.Models
         /// Indicates if arrival and departure times are strictly adhered to.
         /// </summary>
         public Timepoint? Timepoint { get; set; }
+
+        /// <summary>
+        /// Earliest time at which a rider can request pickup for an on-demand trip.
+        /// </summary>
+        public TimeSpan? StartPickupDropOffWindow { get; set; }
+
+        /// <summary>
+        /// Latest time at which a rider can request drop off for an on-demand trip.
+        /// </summary>
+        public TimeSpan? EndPickupDropOffWindow { get; set; }
+
+        /// <summary>
+        /// Booking rule used for pickup at this stop.
+        /// </summary>
+        public string? PickupBookingRuleId { get; set; }
+
+        /// <summary>
+        /// Booking rule used for drop off at this stop.
+        /// </summary>
+        public string? DropOffBookingRuleId { get; set; }
     }
 }

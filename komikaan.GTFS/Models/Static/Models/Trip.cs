@@ -62,6 +62,14 @@ namespace komikaan.GTFS.Models.Static.Models
         /// </summary>
         public CarsAllowed? CarsAllowed { get; set; }
 
+        /// <summary>
+        /// Factor used to compute a safe (pessimistic) duration estimate for on-demand trips.
+        /// </summary>
+        public double? SafeDurationFactor { get; set; }
 
+        /// <summary>
+        /// Offset in seconds added to a safe (pessimistic) duration estimate for on-demand trips.
+        /// </summary>
+        public double? SafeDurationOffset { get; set; }
     }
 }
